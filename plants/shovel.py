@@ -1,6 +1,6 @@
 import json
 import paho.mqtt.client as mqtt
-from plants.flowersensor import FlowerSensor
+from flowersensor import FlowerSensor
 
 class Shovel:
 
