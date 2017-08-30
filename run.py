@@ -1,8 +1,8 @@
 from plants.shovel import Shovel
 
 def main(argv=None):
-    Shovel = Shovel()
-    Shovel.run()
+    shovel = Shovel()
+    shovel.run()
 
 if __name__ == "__main__":
     main()

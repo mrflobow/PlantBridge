@@ -1,7 +1,8 @@
 {
     "mqtt":{
-        "user": ""
-        "password: ""
+        "host":"",
+        "user": "",
+        "password": ""
     },
     "sensors":[
         { "name":"whzPflanze1", "mac": ""}
