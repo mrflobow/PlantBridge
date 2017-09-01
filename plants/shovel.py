@@ -21,6 +21,7 @@ class Shovel:
         mqttc.connect(self.config["mqtt"]["host"], 1883)
         
         for plant in plants:
+            print("Publish informations  of {}".format(plant.name))
             mqttc.publish("plant/{}".format(plant.name),json.dumps(plant.to_json()))
         mqttc.loop(2)
     
