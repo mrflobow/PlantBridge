@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from plants.shovel import Shovel
 
 def main(argv=None):
