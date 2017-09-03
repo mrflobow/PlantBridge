@@ -1,3 +1,4 @@
+import os
 import json
 import paho.mqtt.client as mqtt
 from plants.flowersensor import FlowerSensor
@@ -5,7 +6,9 @@ from plants.flowersensor import FlowerSensor
 class Shovel:
 
     def __init__(self):
-        with open('config.json') as configFile:
+        config_json = os.path.dirname(os.path.abspath(__file__)) +'/../config.json'
+        print("Reading config: {}".format(config_json))
+        with open(config_json) as configFile:
             self.config = json.load(configFile)
 
     
